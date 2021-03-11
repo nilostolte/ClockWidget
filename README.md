@@ -34,7 +34,7 @@ The most customizable feature of the whole program is probably the ability to en
 
 ### `Path` Commands
 
-A `Path` can contain, or it can be added segments with, the following commands:
+A `Path`can be added (or it can already contain) segments defined with the following commands:
 
 1. **moveTo(x,y)**<br>
 This command establishes a new current point. The effect is as if the "pen" were lifted and moved to a new location. A path data segment (if there is one) must begin with a `moveTo` command. Subsequent `moveTo` commands (i.e., when the `moveTo` is not the first command) represent the start of a new subpath.
@@ -45,8 +45,10 @@ This command establishes a straight line from the current point to a new point a
 This command establishes a quadratic Bézier segment is defined by a start point in the current point, an end point (x2,y2), and one control point (x1,y1).
 4. **curveTo(x1,y1,x2,y2,x3,y3)**<br>
 This command establishes a cubic Bézier segment is defined by a start point in the current point, an end point (x3,y3), and two control points (x1,y1) and (x2,y2).
-5. **closepath()**<br>
-Ends the current subpath and causes an automatic straight line to be drawn from the current point to the initial point of the current subpath. If a `closepath` is followed immediately by a `moveTo`, then the `moveTo` identifies the start point of the next subpath
+5. **closePath()**<br>
+Ends the current subpath and causes an automatic straight line to be drawn from the current point to the initial point of the current subpath. If a `closePath()` is followed immediately by a `moveTo`, then the `moveTo` identifies the start point of the next subpath
 
+### Vector Graphics For GUI Programming
 
+**ClockWidget** illustrates how complete Graphics User Interfaces can be designed with in the same way that this code was designed and programmed. In the case of this widget, the interactivity has been substituted by a thread that animates the needles instead of the user interaction.
 
