@@ -30,7 +30,7 @@ This function is the heart of the `Clock` class. It is actually a function from 
 
 Besides reading the current time from `Calendar`, it also executes all the commands required to draw the clock and the current position of the needles. The heuristics for converting the hour, minute and second into angles are shown in this function. Since hours and minutes are naturally expressed in base 60, they actualy represent their angles in degrees which is then converted to radians for display. The hour is given in base 12, which is also thought as an angle in degrees, then converted to radians.
 
-The most customizable feature of the whole program is probably the ability to enlarge the clock without any quality degradation. This can be easily managed changing the scale in this function. Currently, the scale is set to a quart, that is, `g.scale(0.25f,0.25f)`. One can enlarge it by just increasing these values, or reduce the size by decreasing these values. When changing the scale, one also needs to change the variable `size` in `ClockWidget` class, so the clock can be nicely adjusted to right side of the screen. Currently this value is set to `112`. For simplicity, an automatic size adjustment was not coded, but it can be programmed. Currently, the value of `size` must be calculated by hand. For example, if scale is changed to 2, value of `size` must be updated to `896`, that is, `112 x 8 = 896`, since the scale was multiplied by 8.
+The most customizable feature of the whole program is probably the ability to enlarge the clock without any quality degradation. This can be easily managed changing the scale in this function. Currently, the scale is set to a quart, that is, `g.scale(0.25f,0.25f)`. One can enlarge it by just increasing these values, or reduce the size by decreasing these values. When changing the scale, one also needs to change the variable `size` in `ClockWidget` class, so the clock can be nicely adjusted to right side of the screen. Currently this value is set to `112`. For simplicity, an automatic size adjustment was not coded, but it can be programmed. Currently, the value of `size` must be calculated by hand. For example, if scale is changed to 2, value of `size` must be updated to `896`, that is, <pre>112 x 8 = 896</pre>, since the scale went from <pre>0.25</pre> to <pre>2</pre>, that is, one multiplies `size` by 8.
 
 ### `Path` Commands
 
@@ -50,5 +50,7 @@ Ends the current subpath and causes an automatic straight line to be drawn from 
 
 ### Vector Graphics For GUI Programming
 
-**ClockWidget** illustrates how complete Graphics User Interfaces can be designed with in the same way that this code was designed and programmed. In the case of this widget, the interactivity has been substituted by a thread that animates the needles instead of the user interaction.
+**ClockWidget** illustrates how complete Graphics User Interfaces can be designed in a similar manner that this code was designed and programmed. In the case of this widget, the interactivity has been substituted by a thread that animates the needles instead of the user interaction.
+
+In addition, all the GUI design can be defined by only these primitives and the commands to display them. Thus, the whole GUI design is machine independent and could be stored as data. For even more portability, a language to define the interactions is desirable. In this way, the interface could be even changed on the fly (with the program running) and it can work not only in different operating systems but also with different programming languages.
 
