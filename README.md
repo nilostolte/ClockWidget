@@ -37,8 +37,8 @@ The most customizable feature of the whole program is probably the ability to en
 A `Path` can contain, or it can be added segments with, the following commands:
 
 1. **moveTo(x,y)**<br>
-This command establishes a new current point. The effect is as if the "pen" were lifted and moved to a new location. A path data segment (if there is one) must begin with a `moveto` command. Subsequent `movet`" commands (i.e., when the `moveto` is not the first command) represent the start of a new subpath.
-When it is executed `moveto` starts a new sub-path at the given (x,y) coordinate. A `moveto` indicates that absolute coordinates will follow.
+This command establishes a new current point. The effect is as if the "pen" were lifted and moved to a new location. A path data segment (if there is one) must begin with a `moveTo` command. Subsequent `moveTo` commands (i.e., when the `moveTo` is not the first command) represent the start of a new subpath.
+When it is executed `moveTo` starts a new sub-path at the given (x,y) coordinate. A `moveTo` indicates that absolute coordinates will follow.
 2. **lineTo(x,y)**<br>
 This command establishes a straight line from the current point to a new point at the given (x,y) coordinate.
 3. **quadTo(x1,y1,x2,y2)**<br>
@@ -46,7 +46,7 @@ This command establishes a quadratic Bézier segment is defined by a start point
 4. **curveTo(x1,y1,x2,y2,x3,y3)**<br>
 This command establishes a cubic Bézier segment is defined by a start point in the current point, an end point (x3,y3), and two control points (x1,y1) and (x2,y2).
 5. **closepath()**<br>
-Ends the current subpath and causes an automatic straight line to be drawn from the current point to the initial point of the current subpath. If a `closepath` is followed immediately by a `moveto`, then the `moveto` identifies the start point of the next subpath
+Ends the current subpath and causes an automatic straight line to be drawn from the current point to the initial point of the current subpath. If a `closepath` is followed immediately by a `moveTo`, then the `moveTo` identifies the start point of the next subpath
 
 
 
