@@ -36,10 +36,11 @@ The most customizable feature of the whole program is probably the ability to en
 
 A `Path` can contain the following commands:
 
-1. **moveto(x,y)**
+1. **moveTo(x,y)**
+
 This commands establishes a new current point. The effect is as if the "pen" were lifted and moved to a new location. A path data segment (if there is one) must begin with a `moveto` command. Subsequent `movet`" commands (i.e., when the `moveto` is not the first command) represent the start of a new subpath.
 When it is executed `moveto` starts a new sub-path at the given (x,y) coordinate. A `moveto` indicates that absolute coordinates will follow.
-2. **lineto(x,y)**
+2. **lineTo(x,y)**
 Draws a straight line from the current point to a new point at the given (x,y) coordinate.
 3. **quadTo(x1,y1,x2,y2)**
 A quadratic Bézier segment is defined by a start point in the current point, an end point (x2,y2), and one control point (x1,y1).
