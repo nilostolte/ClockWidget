@@ -8,7 +8,7 @@ The clock is defined in the class `Clock`. Its geometry is defined by a series o
 
 ### Paths
 
-Every _shape_ in **Java** is defined by _paths_ which are the lowest level way to define _shape_ s in vectors graphics in **Java**. `Path2D` primitive from **Java awt**, is the most basic way a vector graphics _shape_ can be defined. A _path_ can be composed by possibly 5 basic commands: `moveTo`, `lineTo`, `quadTo`, `curveTo` and `closePath`. The meaning of each these commands can be found at <a href=“https://github.com/nilostolte/ClockWidget/blob/main/README.md#path-commands”>below</a>.
+Every _shape_ in **Java** is defined by _paths_ which are the lowest level way to define _shape_ s in vectors graphics in **Java**. `Path2D` primitive from **Java awt**, is the most basic way a vector graphics _shape_ can be defined. A _path_ can be composed by possibly 5 basic commands: `moveTo`, `lineTo`, `quadTo`, `curveTo` and `closePath`. The meaning of each these commands can be found at <a href=“https://github.com/nilostolte/ClockWidget/blob/main/README.md#path-commands” onclick="window.open('https://github.com/nilostolte/ClockWidget/blob/main/README.md#path-commands', '_self');>below</a>.
 
 The different explicit _paths_ in the class `Clock` are defined by the functions: `hour_mark()`, `minute_mark()`, `h_needle()`, `m_needle()` and `s_needle()`.
 
