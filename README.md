@@ -18,7 +18,7 @@ The functions `h_needle()`, `m_needle()` and `s_needle()`, define the dynamic el
 
 ### Areas
 
-An `Area` in Java is a higher level concept where a _shape_ can be defined by composing other `Areas` with **CSG** operators such as: `add` (union), `subtract` and `intersect`. An exemple how to use these operators can be found [here](https://docs.oracle.com/javase/tutorial/2d/advanced/complexshapes.html). Intially, each basic `Area` component of final obtained _shape_ must be initialized with a _shape_. This is shown in the functions: `downShadowArea()`, `dialRimArea()`, and `dialArea()`. The resulting `Area` is the final shape to be displayed.
+An `Area` in Java is a higher level concept where a _shape_ can be defined by composing other `Areas` with **CSG** operators such as: `add` (union), `subtract` and `intersect`. An exemple how to use these operators can be found [here](https://docs.oracle.com/javase/tutorial/2d/advanced/complexshapes.html). Initially, each basic `Area` component of final obtained _shape_ must be initialized with a _shape_. This is shown in the functions: `downShadowArea()`, `dialRimArea()`, and `dialArea()`. The resulting `Area` is the final shape to be displayed.
 
 ### Interrupting `Thread`
 
