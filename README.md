@@ -42,9 +42,9 @@ When it is executed `moveTo` starts a new sub-path at the given (x,y) coordinate
 2. **lineTo(x,y)**<br>
 This command establishes a straight line from the current point to a new point at the given (x,y) coordinate.
 3. **quadTo(x1,y1,x2,y2)**<br>
-This command establishes a quadratic Bézier segment is defined by a start point in the current point, an end point (x2,y2), and one control point (x1,y1).
+This command establishes a quadratic Bézier segment that is defined by a start point in the current point, an end point (x2,y2), and one control point (x1,y1).
 4. **curveTo(x1,y1,x2,y2,x3,y3)**<br>
-This command establishes a cubic Bézier segment is defined by a start point in the current point, an end point (x3,y3), and two control points (x1,y1) and (x2,y2).
+This command establishes a cubic Bézier segment that is defined by a start point in the current point, an end point (x3,y3), and two control points (x1,y1) and (x2,y2).
 5. **closePath()**<br>
 Ends the current subpath and causes an automatic straight line to be drawn from the current point to the initial point of the current subpath. If a `closePath()` is followed immediately by a `moveTo`, then the `moveTo` identifies the start point of the next subpath
 
