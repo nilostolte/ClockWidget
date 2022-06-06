@@ -1,6 +1,11 @@
 ## ClockWidget
 
+
+![Untitled](https://user-images.githubusercontent.com/80269251/172165317-7aceff75-f704-4138-b01d-42bea1a0e13f.png)
+
 This application is a **vector graphics** clock in **Java**. It contains less than 300 lines and it has many clues on how to use vector graphics in **Java** (for constructing **GUI**s, for example). It has a small thread to refresh and update the clock needles positions according to the real-time system clock. It positions itself at the top right side of the screen. It's scale and other parameters can be easily changed in the source code, requiring recompilation and .jar generation. If you are interested in writing a cmake file to compile this program, please let me know.
+
+This widget is also available in [Javascript/HTML 5 Canvas](https://github.com/nilostolte/nilostolte.github.io/blob/main/examples/index.html). Please see the online demo [here](https://nilostolte.github.io/examples/index.html#clock).
 
 ### `Clock` class
 
